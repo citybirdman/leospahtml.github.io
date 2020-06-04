@@ -1,0 +1,459 @@
+@font-face {
+    font-family: 'Amiri';
+    src: url('fonts/Amiri-BoldItalic.ttf');
+}
+*{
+	padding:0;
+	font-family:'Roboto', sans-serif;
+	transition:all .2s ease;
+	color:#263a41;
+	border:0;
+}
+
+body{
+	max-width: 1920px;
+	min-width:1024px;
+	margin:0;
+}
+.the-top-background{
+	background:url('banner-background.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+nav.nav{
+	display:flex;
+	padding-left:200px;
+}
+nav.nav a.brand{
+	margin-top:10px;
+}
+nav.nav ul.nav-menu{
+	list-style-type:none;
+	margin:0 auto;
+	display:flex;
+}
+nav.nav ul.nav-menu li{
+	display:inline-flex;
+	align-items:baseline;
+}
+nav.nav ul.nav-menu li a{
+	padding:55px 30px 30px;
+	font-size:14px;
+	margin:0;
+	text-decoration:none;
+	color:inherit;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.nav-bottom{
+	padding-left:0 !important;
+	flex-direction:column;
+}
+.nav-bottom .brand{
+	margin:0 auto;
+	text-align: center;
+}
+.nav-bottom .nav-menu li a{
+	padding-top:30px !important;
+}
+.banner-container{
+	padding-left:200px;
+	padding-top: 5rem;
+	padding-bottom:15rem;
+	width:540px;
+}
+header .banner-container h5.banner-cite{
+	color:#ff817e;
+	text-transform:uppercase;
+	font-family: 'Rufina', serif;
+	font-size:15px;
+}
+header .banner-container h1.banner-caption{
+	font-family: 'Rufina', serif;
+	font-size:60px;
+	font-weight:bold;
+}
+.banner-paraghraph{
+	margin:40px 0;
+	color:#555;
+	font-size:15px;
+}
+.paraghraph{
+	font-size: 13px;
+	margin-bottom:50px !important;
+}
+.paraghraph-muted{
+	color:#bdbdbd;
+	font-size:15px;
+}
+.muted{
+	color:#bdbdbd;
+}
+.btn{
+	text-decoration:none;
+	display:inline-block;
+	font-size:13px;
+	padding:15px 25px;
+}
+.btn i {
+	display: inline-flex;
+	vertical-align: middle;
+	color:inherit;
+	margin-left: 5px;
+}
+.btn-rounded{
+	border-radius:100px;
+	padding: 10px 35px;
+}
+.bg-pink{
+	background-color: #ff817e !important;
+	color:#fff;
+}
+.bg-trnsparent{
+	background-color:transparent !important;
+	color:#000;
+}
+.bg-darkgray{
+	background-color: #30383b !important;
+	color:#fff;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.pink{
+	color: #ff817e !important;
+
+}
+.rounded-border{
+	border:1px solid #263a41;
+	border-radius:50%;
+	display:inline-flex;
+	margin:5px;
+	align-items: center;
+	justify-content: center;
+	width:25px;
+	height: 25px;
+	font-weight:lighter !important;
+}
+.mediumgray{
+	color:#a4a2a2 !important;
+}
+.pink-hover:hover{
+	color: #ff817ec2 !important;
+}
+.pink-hover:active{
+	color: #ff817e !important;
+}
+.bg-pink-hover:hover{
+	background-color: #ff817ec2 !important;
+	color: #fff;
+	border-color: #ff817e !important;
+}
+.bg-pink-hover:focus{
+	background-color: #ff817e !important;
+	color: #fff !important;
+	border-color: #ff817e !important;
+}
+.second-heading{
+	font-family: 'Rufina', serif;
+	font-size:35px;
+	font-weight:bold;
+}
+.third-heading{
+	font-family: 'Rufina', serif;
+	font-weight: bold;
+	font-size:20px;
+}
+.fourth-heading{
+	margin:10px 0 30px 0;
+}
+.fourth-heading-after{
+	margin: 0 auto !important;
+}
+.category{
+	font-size:12px;
+	font-weight: 400;
+	display: inline-block;
+	margin:0;
+}
+.btn-play{
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color:#ff817e !important;
+	margin:0 10px;
+	padding:0;
+	width:30px;
+	height:30px;
+	background-color:#fcf5ee;
+}
+.roboto{
+	font-family:'Roboto', sans-serif;
+}
+.weight-light{
+	font-weight:400 !important;
+}
+.text-center{
+	text-align: center !important;
+	justify-content: center !important;
+}
+.center-with-width{
+	max-width: 760px;
+margin: 0 auto;
+text-align:center;
+}
+.center-with-width-sm	{
+	max-width: 560px;
+margin: 0 auto;
+text-align:center;
+}
+.d-flex{
+	display: flex;
+}
+/* icons section */
+.icons-container{
+	margin: 9rem 0;
+	overflow: hidden;
+}
+.max-width{
+	width:max-content;
+}
+.icon{
+	display: inline-flex;
+	flex-direction: column;
+	width:400px;
+	height:520px;
+	background-color: #ddd;
+	justify-content: center;
+	align-items: center;
+}
+/* end icons section */
+
+/* procedure section */
+.procedures{
+	margin: 9rem 0 5rem 0;
+}
+.cards{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+}
+.procedure-card{
+	position:relative;
+	margin:15px 10px;
+	padding:15px;
+	display: inline-block;
+	width:min-content;
+	border:1px solid #ddd;
+	border-radius:5px;
+}
+
+.procedure-card .btn{
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	bottom: 15px;
+	width: max-content;
+	margin:0 auto;
+}
+
+.procedure-card .paraghraph{
+	margin-bottom: 75px !important;
+}
+.procedure-card:hover{
+	box-shadow: -1px 4px 27px -17px;
+}
+.card-fake-img{
+	width:250px;
+}
+/* end procedure section */
+/* quote section */
+.quote{
+	padding: 6rem 0;
+	background-color: #fff9f8;
+}
+.big-quote{
+	font-family: "Amiri";
+	font-size: 100px;
+	display: block;
+	line-height: 1;
+	height:40px;
+	color:#ff817e;
+	user-select: none;
+
+
+}
+.dots{
+	user-select: none;
+}
+.dot{
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	display: inline-block;
+	margin:0 3px;
+	background-color: #ffc3c2;
+	outline: 0;
+}
+.dot:hover, .dot:focus, .dot:active{
+	background-color: #ff817e;
+}
+/*end quote section */
+
+/* team card section */
+.team{
+	padding:6rem 0;
+}
+.team-card{
+	text-align:center;
+	width:min-content;
+	display:inline-block;
+	margin:0 5px;
+	padding:15px 10px;
+	display: inline-flex;
+	flex-direction: column;
+}
+.team-card .card-details span{
+	display: none;
+}
+.team-img{
+	width: 290px;
+	height: 370px;
+	background-color:#f1f1f1;
+	margin-bottom: -45px;
+}
+.card-details{
+	padding: 25px 0;
+	position: relative;
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+.active .card-details{
+	box-shadow: 0px 0px 40px 0px #d6d6d6;
+}
+.active .team-img{
+	margin-bottom: -90px;
+}
+.active .card-details span{
+	display: inline-flex !important;
+}
+.card-details span:hover{
+	background-color: #ff817e;
+	border-color:#ff817e;
+	color:#fff;
+}
+.card-details span:focus{
+	background-color: #ff817e;
+	border-color:#ff817e;
+	color:#fff;
+}
+/* end team card section */
+/* contact section */
+#contact{
+	padding-bottom:12rem;
+	justify-content: space-between;
+}
+/*.w50{
+	width:50%;
+	display: inline-block;
+}*/
+.details{
+	padding:15px 80px 15px 0;
+	text-align:left;
+}
+.details p {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 2;
+	color:#999;
+	text-align:left;
+	margin:0 0 0 10px;
+
+}
+.details span{
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:40px;
+	height:40px;
+	vertical-align:top;
+	border-radius:50%;
+	background-color:#ff817e;
+	color:#fff;
+	font-weight : lighter !important;
+}
+
+.contact-form form *{
+	display:block;
+	margin:15px;
+}
+.contact-form form input[type="text"], .contact-form form textarea{
+	width:400px;
+	padding: 10px 5px;
+	border: 1px solid #e3e6ea;
+	outline:0;
+}
+
+form input:not([type="submit"])::placeholder{
+	color:#e3e6ea;
+}
+form input:not([type="submit"])::-ms-input-placeholder{
+	color:#e3e6ea;
+}
+form textarea::placeholder{
+	color:#e3e6ea;
+}
+
+form textarea::-ms-input-placeholder{
+	color:#e3e6ea;
+}
+form textarea{
+	resize: none;
+	height: 100px;
+}
+form input[type="submit"]{
+	margin:0 auto !important;
+}
+/* end contact section */
+
+/* appointment section */
+#Appointment {
+	display: flex;
+	padding-top:6rem;
+}
+#Appointment img{
+	width:500px;
+	height:540px;
+}
+#Appointment form{
+	display: inline-flex;
+	flex-direction:column;
+	padding-left:70px;
+}
+#Appointment form input:not([type="submit"]), #Appointment form textarea{
+	width: 280px;
+	border-bottom: 1px solid #e3e6ea !important;
+	padding: 10px 5px;
+	margin:10px;
+}
+#Appointment form textarea{
+	width:560px ;
+}
+/* end Appointment section */
+
+/* footer section */
+.social-media span{
+	display: inline-block;
+	padding:5px;
+	padding-right: 10px;
+	border-right:1px solid #b1b4bb;
+}
+.social-media span:hover{
+	color:#ff817e;
+}
+.social-media span.last{
+	border-style:none;
+	border-width: 0;
+}
+/* end footer section */
